@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 /**
- * Elemental Field Lab — Fluids/Smoke/Wind/Plasma (v3.0.0 — Phase 0–2)
+ * Elemental Field Lab — Fluids/Smoke/Wind/Plasma (beta)
  *
  * PHASE 0: Dev HUD & Guardrails
  *  • Per-frame stats (max|v|, avg|div| pre/post, substeps, NaN count, FPS)
@@ -15,10 +15,6 @@ import React, { useEffect, useRef, useState } from "react";
  *  • Fluid: light viscosity blur + curvature (surface-tension proxy) from dye
  *  • Smoke: ambient temperature gradient & top evaporation (stratification)
  *  • Plasma: vector potential A, pseudo-MHD forces via J×B
- *
- * This file is PART 1 of 2 (Canvas line-limit split).
- * PART 1 ends right before the JSX return(). PART 2 will start at the return(
- * and include the draw/step implementations and helpers.
  */
 
 // ---------- Tiny helpers ----------
